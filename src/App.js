@@ -9,7 +9,7 @@ function App() {
     date: "12 Ocak 2021, Salı",
     image: food,
     description:
-      "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar.",
+      "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar."
   };
 
   const likeCount = 193;
@@ -21,6 +21,9 @@ function App() {
         <Card
           /* prop ismi = { değişken } */
           author={recipeAuthor}
+          recipe={recipeItem}
+          likeCount={likeCount}
+          isLiked={isLiked}
         />
       </header>
     </div>
